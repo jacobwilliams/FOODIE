@@ -222,7 +222,7 @@ contains
   !< Test explicit Adams-Bashforth class of ODE solvers.
   !---------------------------------------------------------------------------------------------------------------------------------
   integer(I_P), intent(IN)      :: steps            !< Number of steps used: if negative all AB solvers are used.
-  integer, parameter            :: ab_steps=4       !< Adams-Bashforth steps number.
+  integer, parameter            :: ab_steps=8       !< Adams-Bashforth steps number.
   real(R_P), allocatable        :: solution(:,:)    !< Solution at each time step.
   integer(I_P)                  :: s                !< AB steps counter.
   integer(I_P)                  :: steps_range(1:2) !< Steps used.
@@ -251,7 +251,7 @@ contains
   !< Test predictor-corrector Adams-Bashforth-Moulton class of ODE solvers.
   !---------------------------------------------------------------------------------------------------------------------------------
   integer(I_P), intent(IN)      :: steps            !< Number of steps used: if negative all AB solvers are used.
-  integer, parameter            :: abm_steps=4      !< Adams-Bashforth-Moulton steps number.
+  integer, parameter            :: abm_steps=8      !< Adams-Bashforth-Moulton steps number.
   real(R_P), allocatable        :: solution(:,:)    !< Solution at each time step.
   integer(I_P)                  :: s                !< ABM steps counter.
   integer(I_P)                  :: steps_range(1:2) !< Steps used.
@@ -281,7 +281,7 @@ contains
   !< Test implicit Adams-Moulton class of ODE solvers.
   !---------------------------------------------------------------------------------------------------------------------------------
   integer(I_P), intent(IN)      :: steps            !< Number of steps used: if negative all AB solvers are used.
-  integer, parameter            :: am_steps=3       !< Adams-Moulton steps number.
+  integer, parameter            :: am_steps=7       !< Adams-Moulton steps number.
   real(R_P), allocatable        :: solution(:,:)    !< Solution at each time step.
   integer(I_P)                  :: s                !< AM steps counter.
   integer(I_P)                  :: steps_range(1:2) !< Steps used.
