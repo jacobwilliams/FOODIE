@@ -98,6 +98,7 @@ contains
   !---------------------------------------------------------------------------------------------------------------------------------
   self%steps = steps
   if (allocated(self%b)) deallocate(self%b) ; allocate(self%b(1:steps)) ; self%b = 0._R_P
+  select case(steps)
   case(1)
     ! AB(1) Forward-Euler
     self%b(1) = 1.0_R_P
